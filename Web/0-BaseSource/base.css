@@ -56,3 +56,37 @@ html {
 
 /* Typography */
 
+h1 {
+    font-size: 50px;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height:56px;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 26px;
+    line-height: 35px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+button {
+    font-size: 14px;
+    line-height: 52px;
+}
