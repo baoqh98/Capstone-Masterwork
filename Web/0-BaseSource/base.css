@@ -46,81 +46,219 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 html {
-    font-size: 62.5%;
     box-sizing: border-box;
 }
 * {
     box-sizing: inherit;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+    display: block;
+}
 
 /* Typography */
+a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+a:hover {
+    color: var(--primary);
+}
 
 h1 {
-    font-size: 9.6rem;
-    line-height: 13.4rem;
+    font-size: 96px;
+    line-height: 134px;
     font-weight: 700;
+    color: var(--title-color);
     letter-spacing: -1.5px;
 }
 
 h2 {
-    font-size: 6rem;
-    line-height: 8.4rem;
+    font-size:6px;
+    line-height: 84px;
     font-weight: 700;
+    color: var(--title-color);
     letter-spacing: -0.5px;
 }
 
 h3 {
-    font-size: 4.8rem;
-    line-height: 6.72rem;
+    font-size: 48px;
+    line-height: 67.2px;
     font-weight: 700;
+    color: var(--title-color);
     letter-spacing: 0px;
 }
 
 h4 {
-    font-size: 3.6rem;
-    line-height: 5.04rem;
+    font-size: 36px;
+    line-height: 50.4px;
     font-weight: 700;
+    color: var(--title-color);
     letter-spacing: 0.25px;
 }
 
 h5 {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 700;
+    color: var(--title-color);
     letter-spacing: 0px;
 }
 
 h6 {
-    font-size: 2rem;
-    line-height: 2.8rem;
-    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
     letter-spacing: 0.15px;
+    color: var(--title-color);
 }
 
 .body-1 {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: var(--text-color);
 }
 .body-2 {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 14px;
+    line-height: 22px;
     font-weight: 500;
     letter-spacing: 0.25px;
+    color: var(--text-color);
 }
 
 .btn-text {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 14px;
+    line-height: 22px;
     font-weight: 300;
     letter-spacing: 1.25px;
+    color: var(--text-color);
     text-transform: uppercase;
 }
 
 .caption {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 12px;
+    line-height: 2px;
     font-weight: 500;
+    color: var(--text-color);
     letter-spacing: 0.4px;
 }
+/* Bootstrap modified LAYOUT */
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media screen and (min-width: 1440px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 375px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 0;
+    padding-right: 0;
+} */
+.row {
+    position: relative;
+    /* width: 100%; */
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* Footer style*/
+footer .footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--light-bg-color);
+}
+footer .footer .newsletter .box {
+    padding: 32px;
+    background-color: var(--white);
+    border-radius: var(--card-curve);
+    box-shadow: var(--card-box-shadow);
+}
+footer .footer .newsletter .box h6 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+footer .footer .newsletter .box form input {
+    padding: 12px 20px;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    font-weight: 700;
+    border: none;
+    border-radius: var(--card-curve);
+    width: 78%;
+    outline: none;
+}
+footer .footer .newsletter .box form .btn.btn-primary {
+    background-color: var(--primary);
+    outline: none;
+    width: 20%;
+    border: none;
+}
+footer .footer .copyright {
+    border-top: 0.2px solid #999;
+}
+footer .footer .copyright .social a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer .copyright .social i {
+    color: #000;
+}
+footer .footer .copyright .social i:hover {
+    color: var(--primary);
+}
+
