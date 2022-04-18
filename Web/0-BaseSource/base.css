@@ -57,8 +57,10 @@ html {
 /* Typography */
 
 h1 {
-    font-size: 50px;
-    line-height: 58px;
+    font-size: 9.6rem;
+    line-height: 13.4rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
 }
 
 h2 {
@@ -86,7 +88,14 @@ h6 {
     line-height: 20px;
 }
 
-button {
+p {
+
+}
+
+.btn-text {
     font-size: 14px;
     line-height: 52px;
+}
+.caption { 
+    font-weight: 500;
 }
