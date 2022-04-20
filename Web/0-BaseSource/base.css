@@ -251,6 +251,14 @@ header .nav-link {
     padding: 14px 0;
     color: var(--title-color);
 }
+header a.dropdown-item {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--title-color);
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 14px;
+}
 header a.nav-link:hover,a.dropdown-item:hover{
     color: var(--primary);
 }
