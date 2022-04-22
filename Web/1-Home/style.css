@@ -1,3 +1,6 @@
+/* 1rem = 16px */
+
+/* BANNER */
 .banner-section {
   position: relative;
   z-index: 1;
@@ -18,4 +21,53 @@
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.banner-section .img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(-180deg);
+}
+
+/* WHY CHOOSE US */
+
+.why-us .header-section {
+  max-width: 750px;
+}
+.why-us .header-section h6.body-1 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.why-us .product-boxs .box {
+  border-radius: var(--card-curve);
+  transition: 0.3s ease-in;
+  background: var(--light-bg-color);
+  padding: 48px 32px;
+  border: 1px solid var(--light-bg-color);
+}
+.why-us .product-boxs .box:hover {
+  transition: 0.3s ease-in;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: var(--card-hover-box-shadow);
+  transform: var(--transformY);
+}
+.why-us .product-boxs .box:hover a:hover {
+  color: unset;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .why-us .header-section h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .why-us .header-section h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
 }
