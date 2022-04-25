@@ -350,7 +350,24 @@ header .navbar-toggler span{
     background-color: var(--primary);
     border-radius: 5px;
 }
-
+/* breadcrums style*/
+#breadcrumbs {
+    padding: 15px 20px;
+    background: var(--light-bg-color);
+}
+.breadcrumbs {
+    margin-top: 90px;
+    padding: 20px 0;
+}
+#breadcrumbs a {
+    color: var(--primary);
+    margin: 0 5px 0 0;
+    font-size: 14px;
+}
+.breadcrumb_last {
+    color: var(--title-color);
+    font-size: 14px;
+}
 /* Footer style*/
 footer {
     margin-top: 200px;
