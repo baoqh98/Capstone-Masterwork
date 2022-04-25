@@ -71,3 +71,33 @@
     line-height: 42px;
   }
 }
+
+/* ABOUT SECTION */
+.about-section {
+  background-color: var(--light-bg-color);
+}
+
+.about-section .about-text-container .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.about-section .about-img-container .about-img {
+  border-radius: var(--card-curve);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 15%);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-section .about-img-container .about-img:hover {
+  transform: var(--transformY);
+}
+
+/* STATS SECTION */
+
+.stats-section {
+  background-color: var(--light-bg-color);
+}
