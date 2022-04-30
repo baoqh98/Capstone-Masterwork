@@ -134,3 +134,39 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* TRUST SECTION */
+.trust-background {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.33)
+    ),
+    url("../assets/img/1.Home/bg.jpeg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 480px;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.trust-background .trust__content-wrapper {
+  max-width: 550px;
+}
+.trust-background .trust__content-wrapper .heading,
+.trust-background .trust__content-wrapper p {
+  color: var(--white);
+}
+
+.trust-background .trust__content-wrapper .theme-btn {
+  border: var(--white);
+  color: var(--text-color);
+}
+
+.trust-background .trust__content-wrapper .theme-btn:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
